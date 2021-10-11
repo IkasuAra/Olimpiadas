@@ -72,9 +72,9 @@ class ginasticaArtistica(Atleta):
             nota_final_jogador2 += notas_jogador2[j]
         if nota_final_jogador1 > nota_final_jogador2:
             print("\nA menor nota do(a) atleta " + atleta2 + " foi " + str(min(notas_jogador2)) + ", sua avaliação final foi de: " + str(nota_final_jogador2))
-            return ("\nA vencedor(a) foi a atleta " + atleta1 + ", com uma nota final de " + str(nota_final_jogador1) + "\n")
+            return ("\nO(a) vencedor(a) foi o(a) atleta " + atleta1 + ", com uma nota final de " + str(nota_final_jogador1) + "\n")
         print("\nA menor nota do(a) atleta " + atleta1 + " foi " + str(min(notas_jogador1)) + ", sua avaliação final foi de: " + str(nota_final_jogador1))
-        return ("\nA vencedor(a) foi a atleta " + atleta2 + ", com uma nota final de " + str(nota_final_jogador2) + "\n")
+        return ("\nO(a) vencedor(a) foi o(a) atleta " + atleta2 + ", com uma nota final de " + str(nota_final_jogador2) + "\n")
     
     def fazerApresentacao(atleta1, atleta2):
         notas_jogador1 = list()
@@ -84,7 +84,7 @@ class ginasticaArtistica(Atleta):
         for i in range(1, 6):
             nota = float(input(str(i) + "° nota: "))
             notas_jogador1.append(nota)
-            print("O(a) " + str(i) + "ª nota do(a) atleta " + atleta1 + " é: " + str(nota))
+            print("A " + str(i) + "ª nota do(a) atleta " + atleta1 + " é: " + str(nota))
         print("\nO(a) atleta " + atleta2 + " está se apresentando...")
         for i in range(1, 6):
             nota = float(input(str(i) + "° nota: "))
