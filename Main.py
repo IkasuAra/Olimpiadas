@@ -10,13 +10,11 @@ def main():
             atleta1 = input("\nO primeiro atleta a competir é: ")
             atleta2 = input("O primeiro atleta a competir é: ")
             ArremessoPeso.fazerTresArremessos(atleta1, atleta2)
-            break
         if opcao == 2:
             print("\n***GINÁSTICA ARTÍSTICA***\n")
             atleta1 = input("\nO primeiro atleta a competir é: ")
             atleta2 = input("O primeiro atleta a competir é: ")
             ginasticaArtistica.fazerApresentacao(atleta1, atleta2)
-            break
         elif opcao == 3:
             print("\nObrigado por participar dos Jogos Olímpicos. Até a próxima!")
             break
