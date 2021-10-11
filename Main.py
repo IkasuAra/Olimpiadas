@@ -1,11 +1,6 @@
 from Atleta import ArremessoPeso, ginasticaArtistica
 
-def nomeAtletas(atleta1, atleta2):
-    atleta1 = input("\nO primeiro atleta a competir é: ")
-    atleta2 = input("O primeiro atleta a competir é: ")
-
 def main():
-
     print("***Bem vindo às olimpíadas***\n")
     print("Escolha um dos esportes abaixo:")
     while True:
