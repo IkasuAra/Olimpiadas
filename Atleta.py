@@ -59,15 +59,15 @@ class ginasticaArtistica(Atleta):
         self.atleta2 = atleta2
 
     def definirVencedor(atleta1, atleta2, notas_jogador1, notas_jogador2):
-        nota_final_jogador1 = float(0.0)
-        nota_final_jogador2 = float(0.0)
-        for j in notas_jogador1:
+        nota_final_jogador1 = 0
+        nota_final_jogador2 = 0
+        for j in range(0, len(notas_jogador1)):
             nota_final_jogador1 += notas_jogador1[j]
             nota_final_jogador2 += notas_jogador2[j]
         if nota_final_jogador1 > nota_final_jogador2:
-            print("\nA menor nota da atleta " + atleta2 + " foi " + str(min(nota_final_jogador2)) + ", sua avaliação final foi de: " + str(nota_final_jogador2))
+            print("\nA menor nota da atleta " + atleta2 + " foi " + str(min(notas_jogador2)) + ", sua avaliação final foi de: " + str(nota_final_jogador2))
             return ("\nA vencedora foi a atleta " + atleta1 + ", com uma nota final de " + str(nota_final_jogador1))
-        print("\nA menor nota da atleta " + atleta1 + " foi " + str(min(nota_final_jogador1)) + ", sua avaliação final foi de: " + str(nota_final_jogador1))
+        print("\nA menor nota da atleta " + atleta1 + " foi " + str(min(notas_jogador1)) + ", sua avaliação final foi de: " + str(nota_final_jogador1))
         return ("\nA vencedora foi a atleta " + atleta2 + ", com uma nota final de " + str(nota_final_jogador2))
     
     def fazerApresentacao(atleta1, atleta2):
