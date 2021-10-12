@@ -85,9 +85,11 @@ class ginasticaArtistica(Atleta):
             nota = float(input(str(i) + "° nota: "))
             notas_jogador1.append(nota)
             print("A " + str(i) + "ª nota do(a) atleta " + atleta1 + " é: " + str(nota))
+        notas_jogador1.remove(min(notas_jogador1))
         print("\nO(a) atleta " + atleta2 + " está se apresentando...")
         for i in range(1, 6):
             nota = float(input(str(i) + "° nota: "))
             notas_jogador2.append(nota)
             print("A " + str(i) + "ª nota do(a) atleta " + atleta2 + " é: " + str(nota))
+        notas_jogador2.remove(min(notas_jogador2))
         print(ginasticaArtistica.definirVencedor(atleta1, atleta2, notas_jogador1, notas_jogador2))
