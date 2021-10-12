@@ -3,11 +3,11 @@ from Atleta import ArremessoPeso, ginasticaArtistica
 class menu():
     #Classe principal para implementar a funcionalidade final das Olimpíadas
     def main():
-        print("***Bem vindo às olimpíadas***\n")
+        print("***Bem-vindo às Olimpíadas!***\n")
         #Loop do Menu de escolha de modalidades 
         while True:
             print("Escolha um dos esportes abaixo:")
-            opcao = int(input(" 1 - Arremesso de peso\n 2 - Ginástica Artística\n 3 - Ir embora\n Opção: "))
+            opcao = int(input(" 1 - Arremesso de Peso\n 2 - Ginástica Artística\n 3 - Ir Embora\n Opção: "))
             if opcao == 1:
                 print("\n***ARREMESSO DE PESO***\n")
                 #Entrada do usuário no nome dos atletas para a modalidade arremesso de peso
